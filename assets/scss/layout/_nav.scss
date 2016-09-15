@@ -1,0 +1,129 @@
+ /* Navigation ----------- */  
+ nav {
+  background-color: $header-grey;
+  margin: $center-margin;
+  padding: 15px;
+
+  ul {
+    max-width: 1107px;
+    margin: auto;
+  }
+  
+  li {
+    display: inline;
+    padding: 20px;
+    border-left: 1px solid #dbdbdb;
+  }
+
+  li:last-child {
+    border-bottom: none;
+    padding-right: 0;
+  }
+
+  li:last-child:hover {
+    background-color: $header-grey;
+  }
+
+  li:hover {
+    background-color: $white;
+  }
+
+  a {
+    color: #4d4d4d;
+    padding-bottom: 6px; 
+    border-bottom: 1px solid #67bcd9;
+  }
+
+  a:hover {
+    border-bottom: none;
+  }
+
+  &:before,  
+  &:after {  
+    content: " ";  
+    display: table;  
+  }  
+
+  &:after {  
+    clear: both;  
+  }
+}
+
+
+   
+  
+  /* Navigation Dropdowns ----------- */
+.navDropdownContainer {
+  width: 90%;
+  margin-left: 1px;
+}
+
+.navDropdown, .navDropdownContainer {
+  display: none;
+  position: absolute;
+  z-index: 10000;
+  background-color: $white;
+  box-shadow: 0px 8px 16px 0px rgba($black,0.2);
+}
+
+.navDropdown {
+
+  a {
+    color: $black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border-bottom: none;
+  }
+
+  a:hover {
+    background-color:#43b1d4;
+    color: $white; 
+  }
+  
+  span {
+    float: left;
+    width: 16%;
+    display: block;
+    padding: 20px;
+  }  
+}
+
+#navDropdownText {
+  float: right;
+  width: 40%;
+  padding: 0;
+
+  p {
+    background-color: #43b1d4;
+    padding: 30px;
+    color: $white;
+    line-height: 1.5
+  }
+
+}
+
+nav ul li:hover .navDropdown, nav ul li:hover .navDropdownContainer {
+  display: block;
+}
+
+/* Navigation Search ----------- */
+.navSearch {
+	padding: 8px;
+  border-radius: $br * 0.666666666;
+  border: none;
+  font-size: 13px;
+  width: 400px;
+  color: $lt-grey;
+}
+
+.searchIcon {
+	padding: 5px;
+  border-radius: 0 $br * 0.666666666 $br * 0.666666666 0;
+  border: none;
+  font-size: 14px;
+  background-color: $white;
+  max-width: 22px;
+  vertical-align: bottom;
+  margin-left: -4px;
+}

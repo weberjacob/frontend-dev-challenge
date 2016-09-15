@@ -74,7 +74,7 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
-  margin: 0 0 190px;
+  margin: 0 0 170px;
   background: #ffffff;
   position: relative;
   zoom: 1;
@@ -265,7 +265,7 @@ html[xmlns] .flexslider .slides {
  * ====================================================================================================================*/
 @media only screen and (min-width : 1245px) { 
   .flexslider {
-      margin: 0 0 19rem;
+      margin: 0 0 12rem;
     }
   
 }

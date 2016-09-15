@@ -1,0 +1,40 @@
+.headerContainer {
+  background-color: $dark-grey; 
+  min-height: 60px;
+
+  >div {
+  	max-width: 1107px;
+  	margin: $center-margin;
+  	padding-top: $global-padding-top;
+  } 
+
+  img {
+    padding: 8px 0;
+    -webkit-filter: drop-shadow( 2px 2px 2px rgba($black,.2) );
+    filter: drop-shadow( 2px 2px 2px rgba($black,.2) );
+  }
+
+  > div > a {
+    @include button-bg;
+    @include callout-shadow-light;
+    @include ease-oneSecond-transition;
+    border-radius: 4px;
+    padding: 12px 40px;
+    font-size: 14px;
+    float: right;
+    margin-top: 5px;
+    border: none;
+    color: $white;
+
+    &:hover {
+      @include ease-oneSecond-transition;
+      background: #40aed1;
+    }	
+  
+    &:after {
+      clear: both;
+    }	
+  }  
+}
+
+  

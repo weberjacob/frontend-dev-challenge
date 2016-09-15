@@ -1,40 +1,31 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>August Ash Frontend Dev Challenge</title>
 <link href="assets/css/reset.css" rel="stylesheet" media="screen" type="text/css" />
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" />
+<link href="assets/css/application.css" rel="stylesheet" media="screen" type="text/css" />
 
-<!--Homepage slider scripts-->
-<link rel="stylesheet" href="assets/slider/flexslider.css" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script src="assets/slider/jquery.flexslider.js"></script>
-<script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
-    $('.flexslider').flexslider();
-  });
-</script>
-<!--END Homepage slider scripts-->
 </head>
 <body>
   
   <div class="headerContainer">
-  	<div class="header">
-      <img src="assets/img/logo.svg">  
+  	<div>
+      <img src="assets/img/logo.svg" alt="August Ash Logo" />  
 
-      <button id="headerLogin"><a href="#">Login</a></button>
+      <a href="#">Login</a>
     </div><!--END header--> 
     <!--Navigation and Dropdowns--> 
-    <nav class="clearfix">
+    <nav>
       <ul>
         <li><a href="#">Who We Are</a>
         	<div class="navDropdownContainer">
         	<div class="navDropdown">
     		  <span>
-    		  <p><strong>Lorem ipsum dolor</strong></p>
+    		  
+          <p><strong>Lorem ipsum dolor</strong></p>
 		      <a href="#">Item 1</a>
 		      <a href="#">Item 2</a>
 		      <a href="#">Item 3</a>
@@ -83,7 +74,7 @@
         <li><a href="#">Our Work</a></li>
         <li><a href="#">Our Blog</a></li>
         <li><a href="#">Careers</a></li>
-        <li><input type="search" value="" name="SEARCH" class="navSearch" placeholder="Search for information ... "><input type="image" src="assets/img/searchicon.png" alt="Search" class="searchIcon"></li>
+        <li><input type="text" value="" placeholder="Search for information ... " name="SEARCH" class="navSearch" /><input type="image" src="assets/img/searchicon.png" alt="Search" class="searchIcon" /></li>
       </ul>
     <a href="#" id="pull"><!--Menu button for small screens--></a>   
     </nav>
@@ -95,12 +86,12 @@
     <div class="flexslider">
 	  <ul class="slides">
 	    <li>
-	      <img src="assets/img/homepage-slide1.jpg" />
+	      <img src="assets/img/homepage-slide1.jpg" alt="homepage slide 1" />
 	      <h1 class="slideCallout">Welcome to our website.</h1>
 	      <button class="slideButton">Shop Now</button>
 	    </li>
 	    <li>
-	      <img src="assets/img/homepage-slide2.jpg" />
+	      <img src="assets/img/homepage-slide2.jpg" alt="homepage slide 2" />
 	      <h1 class="slideCallout">Welcome to our website.</h1>
 	      <button class="slideButton">Shop Now</button>
 	    </li>
@@ -132,13 +123,13 @@
 	  <div class="clearer"></div>
 
 	  <div class="thirdColumn">
-	  	<div class=" callout calloutThree">
+	  	<div class="callout calloutThree">
 	  	  <h2><strong>Callout Three</strong></h2>
 	  	</div>
-	  	<div class=" callout calloutFour">
+	  	<div class="callout calloutFour">
 	  	  <h2><strong>Callout Four</strong></h2>
 	  	</div>
-	  	<div class=" callout calloutFive">
+	  	<div class="callout calloutFive">
 	  	  <h2><strong>Callout Five</strong></h2>
 	  	</div>
 	  </div>
@@ -158,16 +149,16 @@
 
       <!--Email Signup Form-->
       <div>
-        <input type="email" value="" name="EMAIL" class="email" placeholder="Enter Email Address"><input type="submit" value="Sign Up" name="email sign up" class="signupButton">
+        <input type="email" name="email" value="Enter Email Address" /><input type="submit" value="Sign Up" name="signupButton"/>
       </div>  
       <div class="clearer"></div>
 
 
       <span class="footerSM">
-      	<a href="#"><img src="assets/img/footer-facebook.png"></a>
-      	<a href="#"><img src="assets/img/footer-twitter.png"></a>
-      	<a href="#"><img src="assets/img/footer-instagram.png"></a>
-      	<a href="#"><img src="assets/img/footer-pinterest.png"></a>
+      	<a href="#"><img src="assets/img/footer-facebook.png" alt="Footer Facebook" /></a>
+      	<a href="#"><img src="assets/img/footer-twitter.png" alt="Footer Twitter" /></a>
+      	<a href="#"><img src="assets/img/footer-instagram.png" alt="Footer Instagram" /></a>
+      	<a href="#"><img src="assets/img/footer-pinterest.png" alt="Footer Pinterest" /></a>
       </span>	
     </div>
     <!--END footerLeft-->
@@ -201,6 +192,7 @@
     </div>
     <!--END footerNav-->
     <div class="clearer"></div>
+
     <div class="footerContact">
       <p class="tel"><a href="tel:1-952-851-9400">952-851-9400</a></p>
       <p>2626 East 82nd Street, Suite 320 Bloomington, MN 55425</p>
@@ -211,32 +203,36 @@
   </div>
   <!--END footerContainer-->
 
-  <!--Scripts for small screen navigation dropdown menu-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type='text/javascript'>  
-  
-   var $j = jQuery.noConflict();  
+<!--Homepage slider scripts and navigation dropdown scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="assets/slider/flexslider.css" type="text/css" />
+<script src="assets/slider/jquery.flexslider.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
 
-  </script>
-  <script>
-    
-    $j(function() {  
-      var pull        = $j('#pull');  
-      menu        = $j('nav ul');  
+    $(function() {  
+      var pull        = $('#pull');  
+      menu        = $('nav ul');  
       menuHeight  = menu.height();  
   
-    $j(pull).on('click', function(e) {  
+    $(pull).on('click', function(e) {  
         e.preventDefault();  
         menu.slideToggle();  
       });  
     }); 
-	$j(window).resize(function(){  
+  $(window).resize(function(){  
       var w = $(window).width();  
       if(w > 320 && menu.is(':hidden')) {  
         menu.removeAttr('style');  
       }  
     }); 
-  </script>
-  <!--END Scripts for small screen navigation dropdown menu-->  
+
+  });
+</script>
+<!--END Homepage slider scripts and navigation dropdown scripts-->
+
+
+  
 </body>
 </html>

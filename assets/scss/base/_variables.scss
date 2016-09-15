@@ -1,0 +1,44 @@
+// Descriptive color variables
+
+$white          : #fff;
+$black          : #000;
+$orange         : orange;
+$red-orange     : #ff384f;
+$dark-grey      : #646464;
+$lt-grey        : #636363;
+$header-grey    : #e7e7e7;
+$aa-blue        : #39a6c7;
+$bright-green   : rgba(114,229,86,1);
+
+// Font stacks 
+
+$stack-Lato : 'Lato', sans-serif;
+
+// Border radius
+
+$br: 4px;
+
+
+// Padding
+
+$global-padding-top  : 10px;
+
+
+// Margins
+
+$center-margin    : 0 auto;
+
+// Widths 
+
+$column-width    : 1107px;
+
+
+// Asset path
+
+$path-img    : '../img';
+
+// Media query breakpoints
+$brk-1090    : '(max-width: 1090px)';
+$brk-900     : '(max-width: 900px)';
+$brk-770  : '(max-width: 770px)';
+

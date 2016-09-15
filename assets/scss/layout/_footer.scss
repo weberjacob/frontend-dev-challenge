@@ -1,0 +1,97 @@
+.footerContainer {
+  background-color: $lt-grey ;
+  min-height: 60px;
+  line-height: 1.5;
+  color: $white;
+  font-weight: 100;
+  margin-top: 30px;
+  padding-top: $global-padding-top * 5.5;
+}
+
+.footer {
+  max-width: 985px;
+  margin: auto;
+}
+
+.footerLeft {
+  float: left;
+  width: 49%;
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 0.75em;
+ }
+
+  div {
+    margin: 15px 0;
+ }
+}
+
+input[type=email] {
+  width: 60%;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  color: $lt-grey;
+}
+
+input[name=signupButton] {
+  @include button-bg;
+  border-radius: 0 $br *0.833333333 $br *0.833333333 0;
+  padding: 8px 30px;
+  font-size: 14px;
+  border: none;
+  color: $white;
+  margin-left: -6px;
+}
+
+input[type=email], input[name=signupButton], .footerSM img:hover {
+  @include callout-shadow-light;
+}
+
+/* Footer Navigation ----------- */
+.footerNav {
+  width: 50%;
+  float: left;
+
+  span {
+    float: left;
+    width: 25%;
+    margin: 0 3%;
+    line-height: 1.7;
+  }
+
+  a {
+    color: $white;
+    font-size: 0.9em;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    font-style: italic;
+  }
+}
+
+.footerContact {
+  text-align: center;
+  padding: 20px 0 30px;
+  border-top: 1px solid #717171;
+  margin-top: 30px;
+}
+
+.tel {
+  font-size: 1.3em;
+
+  a {
+  	color: $white;
+  }
+
+  a:hover {
+  	color: #39a6c7;	
+ } 
+}
+  

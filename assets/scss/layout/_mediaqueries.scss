@@ -1,0 +1,120 @@
+
+/* Media Queries  ----------- */
+/* Large Screen Nav Search ----------- */
+@media only screen and (max-width : 1090px) { 
+	.navSearch {
+		width: 25%;
+	}
+}	
+
+@media only screen and (max-width : 900px) {
+	.navSearch {
+		width: 15%;
+	}
+} 
+/* Homepage Callout Scaling  ----------- */
+@media only screen and (max-width : 770px) {
+	.halfColumn {
+	  max-width: 90%;
+	  float: none;
+	  margin: 0 auto;
+	}
+	.calloutOne, .calloutTwo, .thirdColumn div {
+      width: 90%;
+      max-width: 90%;
+      margin-bottom: 50px;
+	}
+	.thirdColumn div {
+	  margin-left: 5%;	
+	}
+	.calloutThree h2, .calloutFour h2, .calloutFive h2 {
+		margin: 17% 25%;
+	}
+	.smallScreenFloat {
+      float: left;
+      width: 100%;
+      display: block;
+      text-align: center;
+      position: absolute;
+      right: 0%;
+	}
+	.callout h2 {
+	  margin-bottom: 10%;
+	}
+
+} 
+/* Navigation Scaling Sizes ----------- */
+@media only screen and (max-width : 865px) { 
+	nav {
+		padding-bottom: 30px;
+	}
+	nav ul {  
+        display: none;  
+        height: auto;  
+    }  
+    nav a#pull {  
+        display: block;  
+        border-bottom: none;  
+        width: 100%;  
+        position: relative;  
+    }  
+    nav a#pull:after {  
+        content:"";  
+        background: url(../img/navmenubutton.png) no-repeat;
+        width: 37px;  
+        height: 36px;  
+        display: inline-block;  
+        position: absolute;  
+        top: 0; 
+        margin-top: -11px;
+        left: -7px;
+
+    } 
+    
+	nav ul li {
+		display: block;
+	}
+	.navSearch {width: 85%;}
+    .navDropdown span {width: 90%;}
+    #navDropdownText {float: left; width: 100%;}
+    
+}
+/* Footer Scaling on Small Screens ----------- */
+@media only screen and (max-width : 650px) { 
+	.footerLeft {
+		width: 70%;
+		margin:auto;
+		float: none;
+	}
+	.footerNav {
+		width: 100%;
+		margin: auto;
+		float: none;
+	}
+	.email {
+		width: 50%;
+	}
+	.footerSM {
+		display: block;
+		text-align: center;
+	}
+}
+@media only screen and (max-width : 615px) { 
+	.callout h2 {
+	  margin-bottom: 19%;
+	}
+	
+}
+@media only screen and (max-width : 450px) { 
+	.header img {
+	  max-width: 60%;
+	  margin: 6px;
+	}
+	.slideCallout {
+		font-size: 20px;
+		max-width: 250px;
+		margin-bottom: 9px;
+		margin-top: -26%;
+	}
+	
+}
