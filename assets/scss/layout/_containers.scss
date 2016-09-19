@@ -1,27 +1,34 @@
 /* Homepage slider ----------- */
 .slideCallout {
   @include border-top(#51bad8);
+  @extend %centered;
   margin: -24% auto 0;
   position: relative;
-  max-width: 375px;
-  text-align: center;
+  max-width: 23.4375rem;
   background-color: $white;
   padding: 3% 2%;
-  font-size: 2.1em;
+  font-size: 2.1rem;
   border-radius: 0 0 $br * 0.833333333 $br * 0.833333333;
   color: #5c5c5c;
+
+  @media #{$brk-450} {
+    font-size: 1.25rem;
+    max-width: 15.625rem;
+    margin-bottom: 0.5625rem;
+    margin-top: -26%;
+  }
 }
 
 .slideButton {
-	@include button-bg;
+	@extend %centered;
+  @include button-bg;
   border-radius: $br * 0.666666666;
-  padding: 12px 23px;
-  font-size: 16px;
+  padding: 0.75rem 1.4375rem;
+  font-size: 0.9rem;
   border: none;
-  margin: -14px auto 0;
+  margin: -0.875rem auto 0;
   position: relative;
   color: $white;
-  width: 125px;
+  width: 7.8125rem;
   display: inline-block;
-  text-align: center;
 }

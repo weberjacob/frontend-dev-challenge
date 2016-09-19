@@ -1,0 +1,20 @@
+// Centered and center text
+
+%centered {
+  text-align: center;
+}
+
+%centered-bg {
+  background-position: center;
+}
+
+// Scale Transform
+
+%scale {
+  transform: scale(1.1);
+}
+
+// Columns
+%columns {
+  width: 46.5%;
+}

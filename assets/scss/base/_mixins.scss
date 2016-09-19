@@ -3,8 +3,7 @@
   font-size: $size;
   line-height: $l-height;
   font-weight: $weight;
-  color: $color;
-	
+  color: $color;	
 }
 
 // Buttons 
@@ -20,15 +19,15 @@
 // Shadows 
 
 @mixin callout-shadow {
-  -webkit-box-shadow: 0px 10px 32px -8px rgba($black,0.8);
-  -moz-box-shadow: 0px 10px 32px -8px rgba($black,0.8);
-  box-shadow: 0px 10px 32px -8px rgba($black,0.8);
+  -webkit-box-shadow: 0 0.625rem 2rem -0.5rem rgba($black,0.8);
+  -moz-box-shadow: 0 0.625rem 2rem -0.5rem rgba($black,0.8);
+  box-shadow: 0 0.625rem 2rem -0.5rem rgba($black,0.8);
 }
 
 @mixin callout-shadow-light {
-  -webkit-box-shadow: 0px 10px 32px -8px rgba($black,0.3);
-  -moz-box-shadow: 0px 10px 32px -8px rgba($black,0.3);
-  box-shadow: 0px 10px 32px -8px rgba($black,0.3);
+  -webkit-box-shadow: 0 0.625rem 2rem -0.5rem rgba($black,0.3);
+  -moz-box-shadow: 0 0.625rem 2rem -0.5rem rgba($black,0.3);
+  box-shadow: 0 0.625rem 2rem -0.5rem rgba($black,0.3);
 }
 
 // Trandistions 
@@ -45,6 +44,6 @@
 // Borders
 
 @mixin border-top($color) {
-  border-top: 4px solid $color;	
+  border-top: 0.25rem solid $color;	
 }
 
