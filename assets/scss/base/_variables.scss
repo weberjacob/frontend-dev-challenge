@@ -9,6 +9,7 @@ $lt-grey        : #636363;
 $header-grey    : #e7e7e7;
 $aa-blue        : #39a6c7;
 $bright-green   : rgba(114,229,86,1);
+$body-bg-grey   : #ecf0f1;
 
 // Font stacks 
 
@@ -22,6 +23,9 @@ $br: 4px;
 // Padding
 
 $global-padding-top  : 10px;
+
+// Common Widths
+$full-width    : 69.1875rem;
 
 
 // Margins
@@ -40,5 +44,9 @@ $path-img    : '../img';
 // Media query breakpoints
 $brk-1090    : '(max-width: 1090px)';
 $brk-900     : '(max-width: 900px)';
-$brk-770  : '(max-width: 770px)';
+$brk-865     : '(max-width: 865px)';
+$brk-770     : '(max-width: 770px)';
+$brk-650     : '(max-width: 650px)';
+$brk-615     : '(max-width: 615px)';
+$brk-450     : '(max-width: 450px)';
 

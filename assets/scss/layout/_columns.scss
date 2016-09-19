@@ -1,39 +1,66 @@
 /* Homepage Callout ----------- */
 .twoColumn, .thirdColumn {
+  @extend %centered;
   max-width: $column-width;
-  text-align: center;
-  margin: 20px auto;
+  margin: 2rem auto;
 }
 
 .halfColumn {
+  @include callout-shadow;
   max-width: 48%; 
   float: left;
   margin: 0 1%;
-  @include callout-shadow;
-
+  
   p {
     @include ease-oneSecond-transition;
     background-color: rgba($black,0.5);
-    padding: 10px;
+    padding: 0.625rem;
     max-width: 20%;
-    margin: -60px auto;
-    border: 2px solid #43b3d8;
+    margin: -4rem auto;
+    border: 0.125rem solid #43b3d8;
     border-radius: $br / 2;
   }  
 
   p:hover {
     @include ease-oneSecond-transition;
-    background-color: #3f9cbb;
-    transform: scale(1.1);
-  }   
+    @extend %scale;
+    background-color: rgba($aa-blue, 0.8); 
+  } 
+
+  @media #{$brk-770} {
+    max-width: 90%;
+    width: 90% !important;
+    float: none;
+    margin: 0 auto 2rem;
+  }  
+}
+
+.smallScreenFloat {
+
+  @media #{$brk-770} {
+    float: left;
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: absolute;
+    right: 0%;
+  }
 }
 
 .callout h2 {
   margin: 17% 25%;
   background-color: $white;
   padding: 4%;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   border-radius: 0 0 $br * 0.833333333 $br * 0.833333333;
+
+  @media #{$brk-770} {
+    margin-bottom: 10%;
+  }
+
+  @media #{$brk-615} {
+    margin-bottom: 19%;
+  }
 }
 
 .halfColumn::last-of-type {
@@ -41,11 +68,11 @@
 }
 
 .calloutOne, .calloutTwo {
+  @extend %centered-bg;
   background-image: url('#{$path-img}/image-1.jpg');
   width: 50%;
-  height: 270px;
+  height: 16.875rem;
   border-radius: $br;
-  background-position: center;
   background-size: cover;
 
   p a {
@@ -53,7 +80,11 @@
   }
 
   h2 {
-    @include border-top($orange)
+    @include border-top($orange);
+
+    @media #{$brk-770} {
+      margin-bottom: 4rem;
+    }
   }
 }
 
@@ -68,21 +99,25 @@
 
 .calloutThree, .calloutFour, .calloutFive {
   background-image: url('#{$path-img}/image-3.jpg');
+  @extend %centered-bg;
   width: 50%;
-  height: 310px;
+  height: 19.375rem;
   border-radius: $br;
-  background-position: center;
   background-size: cover;
-  outline: 2px solid $white;
-  outline-offset: -20px;
+  outline: 0.125rem solid $white;
+  outline-offset: -1.5rem;
 
   h2 {
     margin: 40% 25%;
-    @include border-top($bright-green) 
+    @include border-top($bright-green); 
+
+    @media #{$brk-770} {
+      margin: 17% 25%;
+    }
   }
 
   &:hover {
-    box-shadow: inset 0 0 0 20px rgba($black,0.6);
+    box-shadow: inset 0 0 0 1.5rem rgba($black,0.6);
   }
 }
 
@@ -92,7 +127,7 @@
 
 .calloutFive {
   background-image: url('#{$path-img}/image-5.jpg');
-  background-position: right center;
+  @extend %centered-bg;
 }
 
 .thirdColumn {
@@ -107,10 +142,16 @@
   margin: 0 1.3%; 
   float: left;
   @include callout-shadow;
+
+    @media #{$brk-770} {
+      width: 90%;
+      max-width: 90%;
+      margin-bottom: 3.125rem;
+      margin-left: 5%;  
+    }
   }
 
   div:last-child {
     margin-right: 0;
   }
 }
-
